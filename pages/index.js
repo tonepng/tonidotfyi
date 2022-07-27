@@ -9,7 +9,8 @@ import {
   List,
   ListItem,
   //useColorModeValue,
-  chakra
+  chakra,
+  extendTheme
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -21,6 +22,17 @@ import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
+
+const theme = extendTheme({
+  styles: {
+    global: {      
+      ".js-focus-visible :focus:not([data-focus-visible-added])": {
+        outline: "none",
+        boxShadow: "none",
+      },
+    },
+  },
+});
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -53,6 +65,7 @@ const Home = () => (
           ml={{ md: 6 }}
           textAlign="center"
         >
+          {/* profile picture border */}
           <Box
             borderColor="whiteAlpha.800"
             borderWidth={2}
@@ -63,6 +76,7 @@ const Home = () => (
             borderRadius="full"
             overflow="hidden"
           >
+            {/* profile picture */}
             <ProfileImage
               src="/images/sptoni1.png"
               alt="Profile image"
