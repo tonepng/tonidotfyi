@@ -76,7 +76,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About me:
         </Heading>
         <Paragraph>
           Takuya is a freelance and a full-stack developer based in Osaka with a

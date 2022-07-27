@@ -12,7 +12,7 @@ import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.pn
 import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
 import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
 
-const Posts = () => (
+const ILM = () => (
   <Layout title="ILM">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
@@ -77,5 +77,5 @@ const Posts = () => (
   </Layout>
 )
 
-export default Posts
+export default ILM
 export { getServerSideProps } from '../components/chakra'
