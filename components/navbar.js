@@ -74,8 +74,11 @@ const Navbar = props => {
           <LinkItem href="/ilm" path={path}>
             ILM Application
           </LinkItem>
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/projects" path={path}>
+            Projects
+          </LinkItem>
+          <LinkItem href="/contact" path={path}>
+            Contact
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -109,15 +112,18 @@ const Navbar = props => {
                 <NextLink href="/ilm" passHref>
                   <MenuItem as={Link}>ILM Application</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="/projects" passHref>
+                  <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <MenuItem
+                <NextLink href="/contact" passHref>
+                  <MenuItem as={Link}>Contact</MenuItem>
+                </NextLink>
+                {/* <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
                 >
                   View Source
-                </MenuItem>
+                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>
