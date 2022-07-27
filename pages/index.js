@@ -145,7 +145,7 @@ const Home = () => (
         </Paragraph>
       </Section>
 
-      {/* <Section delay={0.3}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
@@ -220,7 +220,7 @@ const Home = () => (
             </Button>
           </NextLink>
         </Box>
-      </Section> */}
+      </Section>
     </Container>
   </Layout>
 )
