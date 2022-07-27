@@ -15,10 +15,10 @@ import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
 import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
 const Works = () => (
-  <Layout title="Works">
+  <Layout title="ILM Application">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        ILM Application
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
