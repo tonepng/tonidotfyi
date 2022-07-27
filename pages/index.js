@@ -9,8 +9,7 @@ import {
   List,
   ListItem,
   //useColorModeValue,
-  chakra,
-  extendTheme
+  chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -23,16 +22,6 @@ import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 
-const theme = extendTheme({
-  styles: {
-    global: {      
-      ".js-focus-visible :focus:not([data-focus-visible-added])": {
-        outline: "none",
-        boxShadow: "none",
-      },
-    },
-  },
-});
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
