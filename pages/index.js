@@ -29,7 +29,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
+      {/* <Box
         borderRadius="lg"
         mb={6}
         p={3}
@@ -38,7 +38,7 @@ const Home = () => (
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hello, I&apos;m an indie app developer based in Japan!
-      </Box>
+      </Box> */}
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -64,7 +64,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/sptoni1.png"
               alt="Profile image"
               borderRadius="full"
               width="100%"
