@@ -8,7 +8,7 @@ import {
   Button,
   List,
   ListItem,
-  //useColorModeValue,
+  useColorModeValue,
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -42,13 +42,15 @@ const Home = () => (
       </Box> */}
 
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
+        <Box 
+          flexGrow={1}
           borderRadius="lg"
           mb={6}
           p={3}
           textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
+        >
           <Heading as="h2" variant="page-title">
             Antoni Alvarez
           </Heading>
