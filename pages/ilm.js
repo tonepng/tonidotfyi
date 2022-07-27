@@ -13,10 +13,10 @@ import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price
 import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
 
 const Posts = () => (
-  <Layout title="Posts">
+  <Layout title="ILM">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Popular Posts
+        ILM Application
       </Heading>
 
       <Section delay={0.1}>
