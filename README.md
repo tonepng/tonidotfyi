@@ -1,7 +1,2 @@
-## Takuya's Homepage
+This website is built based on the <a href='https://www.craftz.dog/' target='_blank'>Takuya Matsuyama's website</a>.
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
-
-## License
-
-MIT License.
