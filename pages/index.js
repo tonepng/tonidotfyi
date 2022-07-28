@@ -47,14 +47,14 @@ const Home = () => (
           borderRadius="lg"
           mb={6}
           p={3}
-          textAlign="center"
+          textAlign="left"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-          <Heading as="h2" variant="page-title">
-            Antoni Alvarez
-          </Heading>
-          <p>Aspiring ( Artist / Filmmaker / Environmentalist )</p>
+            <Heading as="h2" variant="page-title">
+              Antoni Alvarez
+            </Heading>
+            <p>aspiring... ( artist, filmmaker, environmentalist )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -90,11 +90,8 @@ const Home = () => (
           About me:
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
+          Write a paragraph about myself. What I am up to, what I am interested in,
+          and what I want to be doing. Currently, he is living off of his own
           product called{' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
             <Link>Inkdrop</Link>
