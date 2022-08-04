@@ -36,7 +36,7 @@ const Home = () => (
         mb={6}
         p={3}
         textAlign="center"
-        fontSize={20}
+        fontSize={16}
         fontFamily= 'IBM Plex Mono, monospace'
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
@@ -92,7 +92,7 @@ const Home = () => (
           <NextLink href="/projects" passHref scroll={false}>
             <Link>projects </Link>
           </NextLink>
-           i&apos;m working on. i&apos;m going to talk about myself here. sell myself.
+           i&apos;m working on. i&apos;m going   to talk about myself here. sell myself.
            become another cog in the machine. please, buy my labour.
         </Paragraph>
         <Box align="center" my={4}>
