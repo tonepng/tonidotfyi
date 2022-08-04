@@ -56,6 +56,7 @@ const Navbar = props => {
         wrap="wrap"
         align="center"
         justify="space-between"
+        fontFamily= 'IBM Plex Mono, monospace'
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -71,14 +72,14 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/ilm" path={path}>
-            ILM Application
-          </LinkItem>
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
           <LinkItem href="/contact" path={path}>
             Contact
+          </LinkItem>
+          <LinkItem href="/ilm" path={path}>
+            ILM Application
           </LinkItem>
           {/* <LinkItem
             target="_blank"

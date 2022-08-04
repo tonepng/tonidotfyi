@@ -18,20 +18,22 @@ const Projects = () => (
   <Layout title="Projects">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Projects
+        Projects and Collaborations
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem 
+            id="inkdrop" 
+            title="video games" 
+            thumbnail={thumbInkdrop}>
+            creating video games with my friends, usually under 48 hours.
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
-            id="walknote"
-            title="walknote"
+            id="short films"
+            title="short films"
             thumbnail={thumbWalknote}
           >
             Music recommendation app for iOS
@@ -41,7 +43,7 @@ const Projects = () => (
         <Section delay={0.1}>
           <WorkGridItem
             id="fourpainters"
-            title="The four painters"
+            title="photography"
             thumbnail={thumbFourPainters}
           >
             A video work generated with deep learning, imitating famous four
@@ -49,7 +51,11 @@ const Projects = () => (
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
+          <WorkGridItem 
+            id="menkiki"  
+            title="audio production"
+            thumbnail={thumbMenkiki}
+          >
             An app that suggests ramen(noodle) shops based on a given photo of
             the ramen you want to eat
           </WorkGridItem>

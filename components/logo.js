@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
   display: inline-flex;
   align-items: center;
   height: 30px;
@@ -32,7 +32,8 @@ const Logo = () => {
           <Text
           //navbar name logo
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
+            fontFamily= 'IBM Plex Mono, monospace'
+            //fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
             ml={3}
           >

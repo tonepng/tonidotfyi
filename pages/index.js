@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
+import Typed from 'typed.js'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -30,31 +31,27 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      {/* <Box
+      <Box
         borderRadius="lg"
         mb={6}
         p={3}
         textAlign="center"
+        fontSize={20}
+        fontFamily= 'IBM Plex Mono, monospace'
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
-      </Box> */}
+        aspiring... environmentalist
+      </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box 
           flexGrow={1}
-          borderRadius="lg"
-          mb={6}
-          p={3}
-          textAlign="left"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          css={{ backdropFilter: 'blur(10px)' }}
         >
-            <Heading as="h2" variant="page-title">
+            {/* <Heading as="h2" variant="page-title">
               Antoni Alvarez
-            </Heading>
-            <p>aspiring... ( artist, filmmaker, environmentalist )</p>
+            </Heading> */}
+            {/* <p>flavour text</p> */}
         </Box>
         <Box
           flexShrink={0}
@@ -84,29 +81,24 @@ const Home = () => (
           </Box>
         </Box>
       </Box>
-
+      
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          About me:
+          about me:
         </Heading>
         <Paragraph>
-          Write a paragraph about myself. What I am up to, what I am interested in,
-          and what I want to be doing. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
+          hi! my name is antoni. it would be cool if you checked out the
+          {' '}
+          <NextLink href="/projects" passHref scroll={false}>
+            <Link>projects </Link>
           </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+           i'm working on. i'm going to talk about myself here. sell myself.
+           become another cog in the machine. please, buy my labour.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              PROJECTS
             </Button>
           </NextLink>
         </Box>
@@ -114,11 +106,11 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          education and experience
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2017-2022</BioYear>
+          University of British Columbia.
         </BioSection>
         <BioSection>
           <BioYear>2010</BioYear>
@@ -235,3 +227,4 @@ const Home = () => (
 
 export default Home
 export { getServerSideProps } from '../components/chakra'
+
