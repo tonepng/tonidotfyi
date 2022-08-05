@@ -25,7 +25,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
-        bg={active ? 'smokeGrey' : undefined}
+        bg={active ? 'starYellow' : undefined}
         color={active ? '#202023' : inactiveColor}
         target={target}
         {...props}
@@ -57,6 +57,7 @@ const Navbar = props => {
         align="center"
         justify="space-between"
         fontFamily= 'IBM Plex Mono, monospace'
+          fontSize={16}
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>

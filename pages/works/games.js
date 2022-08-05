@@ -11,11 +11,11 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
-const Work = () => (
-  <Layout title="Inkdrop">
+const Games = () => (
+  <Layout title="games">
     <Container>
       <Title>
-        Inkdrop <Badge>2016-</Badge>
+        GAMES <Badge>2016-2022</Badge>
       </Title>
       <P>
         A Markdown note-taking app with 100+ plugins, cross-platform and
@@ -24,17 +24,17 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.inkdrop.app/">
-            https://www.inkdrop.app/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://oktoni.itch.io/">
+          https://oktoni.itch.io/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Windows/macOS/Linux/iOS/Android</span>
+          <span>Windows/macOS/Linux/Web</span>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>NodeJS, Electron, React Native</span>
+          <Meta>Skills</Meta>
+          <span>Pixel Art, Animation, Programming</span>
         </ListItem>
         <ListItem>
           <Meta>Blogpost</Meta>
@@ -60,5 +60,5 @@ const Work = () => (
   </Layout>
 )
 
-export default Work
+export default Games
 export { getServerSideProps } from '../../components/chakra'

@@ -11,7 +11,6 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import Typed from 'typed.js'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -22,45 +21,42 @@ import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
-
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
+//test
+import React, {useEffect} from 'react'
+import Typed from 'typed.js'
+//test
 
 const Home = () => (
   <Layout>
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        fontSize={16}
-        fontFamily= 'IBM Plex Mono, monospace'
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        aspiring... environmentalist
-      </Box>
-
       <Box display={{ md: 'flex' }}>
-        <Box 
-          flexGrow={1}
-        >
+        <Box flexGrow={1}>
+          <Box
+            borderRadius="lg"
+            mb={6}
+            p={3}
+            textAlign="center"
+            fontSize={16}
+            fontFamily= 'IBM Plex Mono, monospace'
+            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+            css={{ backdropFilter: 'blur(10px)' }}
+          >
+            artist / filmmaker / environmentalist
+          </Box>
             {/* <Heading as="h2" variant="page-title">
               Antoni Alvarez
-            </Heading> */}
-            {/* <p>flavour text</p> */}
+            </Heading>
+             <p>passionate about making things</p> */}
         </Box>
-        <Box
+        
+      <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
           textAlign="center"
-        >
+      >
           {/* profile picture border */}
-          <Box
+        {/* <Box
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
@@ -69,18 +65,18 @@ const Home = () => (
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
-          >
+        > */}
             {/* profile picture */}
-            <ProfileImage
-              src="/images/sptoni1.png"
+            {/* <ProfileImage
+              src="/images/sptoni1.jpg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
               height="100%"
-            />
+            /> */}
           </Box>
         </Box>
-      </Box>
+      {/* </Box> */}
       
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
@@ -96,7 +92,7 @@ const Home = () => (
            become another cog in the machine. please, buy my labour.
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
+          <NextLink href="/projects" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               PROJECTS
             </Button>
@@ -106,17 +102,16 @@ const Home = () => (
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          education and experience
+          timeline:  
         </Heading>
         <BioSection>
           <BioYear>2017-2022</BioYear>
-          University of British Columbia.
+            University of British Columbia.
+            studied environmental science, film, photography
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2022</BioYear>
+            Intersections Media
         </BioSection>
         <BioSection>
           <BioYear>2010</BioYear>

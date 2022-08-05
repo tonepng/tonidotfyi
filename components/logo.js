@@ -33,8 +33,7 @@ const Logo = () => {
           //navbar name logo
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily= 'IBM Plex Mono, monospace'
-            //fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
+            fontSize={20}
             ml={3}
           >
             toni.fyi

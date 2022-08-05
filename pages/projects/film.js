@@ -15,10 +15,10 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="walknote">
+  <Layout title="film">
     <Container>
       <Title>
-        walknote <Badge>2011-2016</Badge>
+        FILM <Badge>2016-2022 </Badge>
       </Title>
       <P>
         walknote recommends new music you may like based on your music

@@ -24,7 +24,7 @@ const Projects = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem 
-            id="inkdrop" 
+            id="games" 
             title="video games" 
             thumbnail={thumbInkdrop}>
             creating video games with my friends, usually under 48 hours.
@@ -32,8 +32,8 @@ const Projects = () => (
         </Section>
         <Section>
           <WorkGridItem
-            id="short films"
-            title="short films"
+            id="film"
+            title="film"
             thumbnail={thumbWalknote}
           >
             Music recommendation app for iOS
