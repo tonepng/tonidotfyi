@@ -18,12 +18,12 @@ const Games = () => (
         GAMES <Badge>2020-2022</Badge>
       </Title>
       <P>
-        Since the pandemic, I've spent a lot of time creating little games with my friends.
+        Since the pandemic, I`&apos;`ve spent a lot of time creating little games with my friends.
         Together, we participated in a few gamejams where we finished a game in under 48 hours.
       </P>
       <br></br>
       <P>
-        Apart from following gamedev tutorials on YouTube and practicing on my own I've taken media
+        Apart from following gamedev tutorials on YouTube and practicing on my own I`&apos;`ve taken media
         writing and game narrative courses throughout university.
       </P>
       <List ml={4} my={4}>
