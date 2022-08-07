@@ -30,7 +30,7 @@ const Home = () => (
   <Layout>
     <Container>
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
+        {/* <Box flexGrow={1}>
           <Box
             borderRadius="lg"
             mb={6}
@@ -43,11 +43,11 @@ const Home = () => (
           >
             artist / filmmaker / environmentalist
           </Box>
-            {/* <Heading as="h2" variant="page-title">
+            <Heading as="h2" variant="page-title">
               Antoni Alvarez
             </Heading>
-             <p>passionate about making things</p> */}
-        </Box>
+             <p>passionate about making things</p>
+        </Box> */}
         
       <Box
           flexShrink={0}
@@ -106,37 +106,28 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2017-2022</BioYear>
-            University of British Columbia.
-            studied environmental science, film, photography
+            University of British Columbia
         </BioSection>
         <BioSection>
           <BioYear>2022</BioYear>
             Intersections Media
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2016</BioYear>
+          University of Michigan
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2013-2017</BioYear>
+          Community Highschool
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          i love ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Art, Game Dev, 3D, Music, Drawing, Audio Production, Photography, Wildlife, Environmental Science
         </Paragraph>
       </Section>
 

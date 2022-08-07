@@ -56,11 +56,11 @@ const Navbar = props => {
         wrap="wrap"
         align="center"
         justify="space-between"
-        fontFamily= 'IBM Plex Mono, monospace'
-          fontSize={16}
+        fontFamily= 'IBM Plex Mono'
+          fontSize={13}
       >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+        <Flex align="center" mr={8}>
+          <Heading as="h1" size="lg" letterSpacing={'normal'}>
             <Logo />
           </Heading>
         </Flex>
@@ -97,7 +97,7 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
+          {/* <ThemeToggleButton /> */}
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">

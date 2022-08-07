@@ -8,5 +8,7 @@ export const BioSection = styled(Box)`
 
 export const BioYear = styled.span`
   font-weight: bold;
+  font-family: IBM Plex Mono;
+  font-size: 10px;
   margin-right: 1em;
 `

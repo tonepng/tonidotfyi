@@ -73,11 +73,23 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      scene.add(ambientLight)
+      const ambientLight = new THREE.AmbientLight(0x7d97ff, .25)
+      //scene.add(ambientLight)
 
-      const dirLight = new THREE.DirectionalLight(0xcccccc, 1)
-      scene.add(dirLight)
+      const directionalLight = new THREE.DirectionalLight(0x7d97ff, 1)
+      //100,100,100
+      directionalLight.position.set( 10, 10, 10 );
+			directionalLight.castShadow = true;
+			directionalLight.shadow.mapSize.set( 2048, 2048 );
+      scene.add(directionalLight)
+
+      const spotLight = new THREE.SpotLight( 0xff8800, 1, 10, Math.PI / 16, .02, 2 );
+			spotLight.position.set( 2, 10, 0 );
+			//const target = spotLight.target;
+			//scene.add( target );
+			spotLight.lookAt( 0, 0, 0 );
+			spotLight.castShadow = true;
+			scene.add( spotLight );
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
@@ -86,7 +98,7 @@ const VoxelDog = () => {
 
       loadGLTFModel(scene, '/dog.glb', {
         receiveShadow: false,
-        castShadow: false
+        castShadow: true
       }).then(o => {
         outlinePass.selectedObjects = [];
 
@@ -108,10 +120,10 @@ const VoxelDog = () => {
       const outlinePass = new OutlinePass(new THREE.Vector2(window.innerWidth, window.innerHeight), scene, camera);
       outlinePass.visibleEdgeColor = new THREE.Color(0, 0, 0);
       outlinePass.edgeStrength = 100;
-      outlinePass.edgeThickness = 1;
+      outlinePass.edgeThickness = 0.1;
       composer.addPass(outlinePass);
-
-      const renderPixelatedPass = new RenderPixelatedPass(screenResolution, 4, scene, camera);
+      //pixel size!
+      const renderPixelatedPass = new RenderPixelatedPass(screenResolution, 3.5, scene, camera);
       composer.addPass(renderPixelatedPass);
 
       let req = null

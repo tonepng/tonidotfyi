@@ -25,7 +25,7 @@ const Projects = () => (
         <Section>
           <WorkGridItem 
             id="games" 
-            title="video games" 
+            title= "video games"
             thumbnail={thumbInkdrop}>
             creating video games with my friends, usually under 48 hours.
           </WorkGridItem>
@@ -36,7 +36,7 @@ const Projects = () => (
             title="film"
             thumbnail={thumbWalknote}
           >
-            Music recommendation app for iOS
+            shortfilms, scripts, and other writings
           </WorkGridItem>
         </Section>
 

@@ -27,8 +27,9 @@ class RenderPixelatedPass extends Pass {
 		this.scene = scene;
 		this.camera = camera;
 
-		this.normalEdgeStrength = options.normalEdgeStrength ?? .3;
-		this.depthEdgeStrength = options.depthEdgeStrength ?? .4;
+		this.normalEdgeStrength = options.normalEdgeStrength ?? .005;
+		//Strength: .4
+		this.depthEdgeStrength = options.depthEdgeStrength ?? 1;
 
 		this.rgbRenderTarget = pixelRenderTarget(this.renderResolution, RGBAFormat);
 		this.normalRenderTarget = pixelRenderTarget(this.renderResolution, RGBAFormat);
@@ -119,7 +120,7 @@ class RenderPixelatedPass extends Pass {
 					)
 				},
 				normalEdgeStrength: { value: 0 },
-				depthEdgeStrength: { value: 0 }
+				depthEdgeStrength: { value: 1 }
 			},
 			vertexShader:
 				`

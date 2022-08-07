@@ -32,7 +32,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           placeholder="blur"
         />
         <LinkOverlay href={`/works/${id}`}>
-          <Text mt={2} fontSize={20}>
+          <Text mt={2} fontSize={15} fontFamily= 'IBM Plex Mono'>
             {title}
           </Text>
         </LinkOverlay>

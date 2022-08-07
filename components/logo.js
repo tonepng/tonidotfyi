@@ -5,10 +5,10 @@ import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   display: inline-flex;
   align-items: center;
-  height: 30px;
+  height: 50px;
   line-height: 20px;
   padding: 10px;
 
@@ -33,7 +33,7 @@ const Logo = () => {
           //navbar name logo
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily= 'IBM Plex Mono, monospace'
-            fontSize={20}
+            //fontSize={20}
             ml={3}
           >
             toni.fyi

@@ -15,11 +15,16 @@ const Games = () => (
   <Layout title="games">
     <Container>
       <Title>
-        GAMES <Badge>2016-2022</Badge>
+        GAMES <Badge>2020-2022</Badge>
       </Title>
       <P>
-        A Markdown note-taking app with 100+ plugins, cross-platform and
-        encrypted data sync support. The life-time revenue is more than $300k.
+        Since the pandemic, I've spent a lot of time creating little games with my friends.
+        Together, we participated in a few gamejams where we finished a game in under 48 hours.
+      </P>
+      <br></br>
+      <P>
+        Apart from following gamedev tutorials on YouTube and practicing on my own I've taken media
+        writing and game narrative courses throughout university.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -35,13 +40,6 @@ const Games = () => (
         <ListItem>
           <Meta>Skills</Meta>
           <span>Pixel Art, Animation, Programming</span>
-        </ListItem>
-        <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">
-            How I’ve Attracted The First 500 Paid Users For My SaaS That Costs
-            $5/mo <ExternalLinkIcon mx="2px" />
-          </Link>
         </ListItem>
       </List>
 
