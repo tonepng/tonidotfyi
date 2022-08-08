@@ -18,12 +18,12 @@ const Games = () => (
         GAMES <Badge>2020-2022</Badge>
       </Title>
       <P>
-        Since the pandemic, I`&apos;`ve spent a lot of time creating little games with my friends.
+        Since the pandemic, I&apos;ve spent a lot of time creating little games with my friends.
         Together, we participated in a few gamejams where we finished a game in under 48 hours.
       </P>
       <br></br>
       <P>
-        Apart from following gamedev tutorials on YouTube and practicing on my own I`&apos;`ve taken media
+        Apart from following GameDev tutorials on YouTube and practicing on my own, I&apos;ve taken media
         writing and game narrative courses throughout university.
       </P>
       <List ml={4} my={4}>
@@ -39,21 +39,13 @@ const Games = () => (
         </ListItem>
         <ListItem>
           <Meta>Skills</Meta>
-          <span>Pixel Art, Animation, Programming</span>
+          <span>Pixel Art, Animation, GameDev, Narrative Design</span>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/inkdrop_01.png" alt="Inkdrop" />
-      <WorkImage src="/images/works/inkdrop_02.png" alt="Inkdrop" />
-      <AspectRatio maxW="640px" ratio={1.7} my={4}>
-        <iframe
-          src="https://www.youtube.com/embed/-qBavwqc_mY"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </AspectRatio>
+      <WorkImage src="/images/works/mogu.gif" alt="mogu game" />
+      <WorkImage src="/images/works/jamantha.jpg" alt="jamantha's last stand" />
+      <WorkImage src="/images/works/dissident.jpg" alt="dissident" />
     </Container>
   </Layout>
 )

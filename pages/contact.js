@@ -17,6 +17,7 @@ const Posts = () => (
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         contact me:
+        linkedin, email, social media?
       </Heading>
     </Container>
   </Layout>

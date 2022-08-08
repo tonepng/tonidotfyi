@@ -8,6 +8,7 @@ import {
   Button,
   List,
   ListItem,
+  Badge,
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
@@ -83,13 +84,20 @@ const Home = () => (
           about me:
         </Heading>
         <Paragraph>
-          hi! my name is antoni. it would be cool if you checked out the
+          Hi! My name is Antoni. I&apos;m a recent grad living in Vancouver. 
+          Aspiring to work in film, and make cool art with other people. 
+          It would be cool if you checked out the
           {' '}
           <NextLink href="/projects" passHref scroll={false}>
-            <Link>projects </Link>
+            <Link>projects</Link>
           </NextLink>
-           i&apos;m working on. i&apos;m going   to talk about myself here. sell myself.
-           become another cog in the machine. please, buy my labour.
+            &nbsp;I&apos;m working on. 
+        </Paragraph>
+        <br></br>
+        <Paragraph>
+          I&apos;m going to talk about myself more here. Sell myself.
+          Become another cog in the machine. Please, buy my labour.
+          I care about the environment.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>
@@ -105,20 +113,20 @@ const Home = () => (
           timeline:  
         </Heading>
         <BioSection>
-          <BioYear>2017-2022</BioYear>
-            University of British Columbia
+          <Badge>2017-2022</Badge>
+            &nbsp;University of British Columbia
         </BioSection>
         <BioSection>
-          <BioYear>2022</BioYear>
-            Intersections Media
+          <Badge>2022</Badge>
+            &nbsp;Intersections Media
         </BioSection>
         <BioSection>
-          <BioYear>2016</BioYear>
-          University of Michigan
+          <Badge>2016</Badge>
+            &nbsp;University of Michigan
         </BioSection>
         <BioSection>
-          <BioYear>2013-2017</BioYear>
-          Community Highschool
+          <Badge>2013-2017</Badge>
+            &nbsp;Community Highschool
         </BioSection>
       </Section>
 

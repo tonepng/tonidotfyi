@@ -18,81 +18,67 @@ const Work = () => (
   <Layout title="film">
     <Container>
       <Title>
-        FILM <Badge>2016-2022 </Badge>
+        FILM <Badge>2016-2022</Badge>
       </Title>
       <P>
-        walknote recommends new music you may like based on your music
-        preferences by recognizing your favorite songs stored in your device.
-        You can listen to recommended music just like a radio!
+        I wrote my first 90 page script sitting in on a university class in high school.
+        I haven&apos;t stopped writing and making movies since. 
       </P>
+      <br></br>
       <P>
-        This service has been closed. Thank you for over 130,000 registered
-        users!
+        I enjoy every part of the filmmaking proccess; from writing and storyboarding, to
+        shooting and editing, I can&apos;t help but try and get involved every step of 
+        the way.
       </P>
       <List ml={4} my={4}>
-        <ListItem>
-          <Meta>Platform</Meta>
-          <span>iOS</span>
+      <ListItem>
+          <Meta>Roles</Meta>
+          <span>PA, Assistant DP, Editor, Lighting</span>
         </ListItem>
         <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://archive.craftz.dog/blog.odoruinu.net/2016/09/06/farewell-from-walknote/">
-            音楽発掘アプリwalknoteクローズのお知らせ{' '}
-            <ExternalLinkIcon mx="2px" />
-          </Link>
+          <Meta>Technical</Meta>
+          <span>Premiere Pro, After Effects, Audition, Davinci Resolve</span>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>Objective-C, PHP, MongoDB</span>
+          <Meta>Skills</Meta>
+          <span>Writing, Editing, Colour Grading, Cinematography, Audio</span>
         </ListItem>
       </List>
-
-      <Heading as="h4" fontSize={16} my={6}>
-        <Center>Media coverage</Center>
+      <br></br>
+      <Heading as="h4" variant="section-title" fontSize={16} my={-1}>
+        <Center>Resume</Center>
       </Heading>
 
       <UnorderedList my={4}>
         <ListItem>
-          <Link href="http://renewal49.hateblo.jp/entry/20120710/1341925681">
-            <Badge mr={2}>リニューアル式</Badge>
-            強力すぎて紹介しそびれていた音楽好きのための神アプリ『walknote』
+            <Badge mr={2}>short films</Badge>
+            Risa's Flower, Notice Me
+        </ListItem>
+
+        <ListItem>
+          <Link href="http://www.intersectionsmedia.com/">
+            <Badge mr={2}>internship</Badge>
+            Intersections Digital Media Program
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
 
         <ListItem>
-          <Link href="http://www.appbank.net/2011/10/15/iphone-application/309349.php">
-            <Badge mr={2}>appbank</Badge>
-            walknote:
-            CD屋の試聴機が、自分向けになって手元に到着。そんな曲探しアプリ。無料。
-            <ExternalLinkIcon mx="2px" />
-          </Link>
+            <Badge mr={2}>classes</Badge>
+            Writing for the Screen, Feature Film Writing, Screenplay Workshop, Motion Picture Directing
         </ListItem>
 
-        <ListItem>
-          <Link href="http://www.danshihack.com/2012/07/18/junp/iphoneapp-walknote.html">
-            <Badge mr={2}>男子ハック</Badge>
-            [おすすめの音楽をレコメンド！ストリーミング再生してくれるiPhoneアプリ「walknote」が素敵。
-          </Link>
-          <ExternalLinkIcon mx="2px" />
-        </ListItem>
-
-        <ListItem>
-          <Badge mr={2}>タブロイド</Badge>
-          <Link href="http://www.tabroid.jp/app/multimedia/2013/05/app.walknote.html">
-            「YOU、これ聴いちゃいなよ」自分好みの曲が勝手に集まる音楽プレーヤー『walknote』
-          </Link>
-          <ExternalLinkIcon mx="2px" />
-        </ListItem>
       </UnorderedList>
 
+
+      <WorkImage src="/images/works/risaflower_1c.png" alt="risa's flower" />  
+      <WorkImage src="/images/works/risaflower_3.png" alt="risa's flower" /> 
+      <WorkImage src="/images/works/risaflower_4.png" alt="risa's flower" />
+      <WorkImage src="/images/works/risaflower_5.png" alt="risa's flower" /> 
+      <WorkImage src="/images/works/noticeme_1.png" alt="notice me" />   
+      <WorkImage src="/images/works/noticeme_2.png" alt="notice me" />           
       <SimpleGrid columns={2} gap={2}>
-        <WorkImage src="/images/works/walknote_01.png" alt="walknote" />
-        <WorkImage src="/images/works/walknote_02.png" alt="walknote" />
       </SimpleGrid>
-      <WorkImage src="/images/works/walknote_03.png" alt="walknote" />
-      <WorkImage src="/images/works/walknote_04.png" alt="walknote" />
-      <WorkImage src="/images/works/walknote_05.png" alt="walknote" />
     </Container>
   </Layout>
 )

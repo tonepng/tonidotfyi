@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-//import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -44,7 +44,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#1E152A80')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
@@ -82,9 +82,9 @@ const Navbar = props => {
           <LinkItem href="/ilm" path={path}>
             ILM Application
           </LinkItem>
-          {/* <LinkItem
+          <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/tonepng/tonidotfyi"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -93,7 +93,7 @@ const Navbar = props => {
           >
             <IoLogoGithub />
             Source
-          </LinkItem> */}
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -109,16 +109,16 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>about</MenuItem>
                 </NextLink>
                 <NextLink href="/ilm" passHref>
-                  <MenuItem as={Link}>ILM Application</MenuItem>
+                  <MenuItem as={Link}>ILM application</MenuItem>
                 </NextLink>
                 <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
+                  <MenuItem as={Link}>projects</MenuItem>
                 </NextLink>
                 <NextLink href="/contact" passHref>
-                  <MenuItem as={Link}>Contact</MenuItem>
+                  <MenuItem as={Link}>contact</MenuItem>
                 </NextLink>
                 {/* <MenuItem
                   as={Link}

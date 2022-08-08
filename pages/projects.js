@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbInkdrop from '../public/images/works/mogu.png'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
 import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
@@ -17,110 +17,49 @@ import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 const Projects = () => (
   <Layout title="Projects">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Projects and Collaborations
+      <Heading as="h3" variant="section-title" fontSize={20} mb={10}>
+        projects // collaborations
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem 
             id="games" 
-            title= "video games"
+            title= "GAMES"
             thumbnail={thumbInkdrop}>
-            creating video games with my friends, usually under 48 hours.
+            making games with my friends, 
+            <br></br>
+              usually under 48 hours
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
             id="film"
-            title="film"
+            title="FILM"
             thumbnail={thumbWalknote}
           >
-            shortfilms, scripts, and other writings
+            short films, screenwriting
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="photography"
+            id="photography"
+            title="PHOTOGRAPHY"
             thumbnail={thumbFourPainters}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            snapping pics
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
           <WorkGridItem 
-            id="menkiki"  
-            title="audio production"
+            id="audio production"  
+            title="AUDIO PRODUCTION"
             thumbnail={thumbMenkiki}
           >
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+            making sounds
           </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.2}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
-            A website of the elite app development and contracting agency based
-            in Austria
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
-          >
-            The mode magazine for understanding to personally enjoy Japan
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
-          <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
-          >
-            Automatic audio file tagging tool using FreeDB for Windows
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
-          </WorkGridItem>
+          <br></br>
         </Section>
       </SimpleGrid>
     </Container>
