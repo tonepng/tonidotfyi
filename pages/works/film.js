@@ -52,7 +52,7 @@ const Work = () => (
       <UnorderedList my={4}>
         <ListItem>
             <Badge mr={2}>short films</Badge>
-            Risa's Flower, Notice Me
+            Risa&apos;s Flower, Notice Me
         </ListItem>
 
         <ListItem>
