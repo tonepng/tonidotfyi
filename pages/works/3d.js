@@ -21,14 +21,11 @@ const Work = () => (
         3D <Badge>2022</Badge>
       </Title>
       <P>
-        I wrote my first 90 page script sitting in on a university class in high school.
-        I haven&apos;t stopped writing and making movies since. 
+
       </P>
       <br></br>
       <P>
-        I enjoy every part of the filmmaking proccess; from writing and storyboarding, to
-        shooting and editing, I can&apos;t help but try and get involved every step of 
-        the way.
+       
       </P>
       <List ml={4} my={4}>
       <ListItem>
@@ -52,7 +49,7 @@ const Work = () => (
       <UnorderedList my={4}>
         <ListItem>
             <Badge mr={2}>short films</Badge>
-            Risa's Flower, Notice Me
+           
         </ListItem>
 
         <ListItem>
