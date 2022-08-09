@@ -4,7 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbInkdrop from '../public/images/works/mogu.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
+import thumbWalknote from '../public/images/works/film.png'
 import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
 import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
 import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
@@ -38,7 +38,9 @@ const Projects = () => (
             title="FILM"
             thumbnail={thumbWalknote}
           >
-            short films, screenwriting
+            short films, screenwriting,
+            <br></br>
+            and editing things together
           </WorkGridItem>
         </Section>
 
@@ -48,18 +50,21 @@ const Projects = () => (
             title="PHOTOGRAPHY"
             thumbnail={thumbFourPainters}
           >
-            snapping pics
+            snapping pics of nature
+            <br></br>
+            and my friends
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
           <WorkGridItem 
-            id="audio production"  
-            title="AUDIO PRODUCTION"
+            id="3d"  
+            title="3D"
             thumbnail={thumbMenkiki}
           >
-            making sounds
+            cubes, vfx, animation,
+            <br></br>
+            and other things
           </WorkGridItem>
-          <br></br>
         </Section>
       </SimpleGrid>
     </Container>

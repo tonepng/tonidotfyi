@@ -73,10 +73,10 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0x7d97ff, .25)
-      //scene.add(ambientLight)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+      scene.add(ambientLight)
 
-      const directionalLight = new THREE.DirectionalLight(0x7d97ff, 1)
+      const directionalLight = new THREE.DirectionalLight(0xf8e4c4, 1)
       //100,100,100
       directionalLight.position.set( 10, 10, 10 );
 			directionalLight.castShadow = true;
@@ -123,7 +123,7 @@ const VoxelDog = () => {
       outlinePass.edgeThickness = 0.1;
       composer.addPass(outlinePass);
       //pixel size!
-      const renderPixelatedPass = new RenderPixelatedPass(screenResolution, 3.5, scene, camera);
+      const renderPixelatedPass = new RenderPixelatedPass(screenResolution, 3, scene, camera);
       composer.addPass(renderPixelatedPass);
 
       let req = null

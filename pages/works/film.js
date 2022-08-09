@@ -43,6 +43,10 @@ const Work = () => (
           <Meta>Skills</Meta>
           <span>Writing, Editing, Colour Grading, Cinematography, Audio</span>
         </ListItem>
+        <ListItem>
+          <Meta>Certifications</Meta>
+          <span>MPSA101, WHMIS, First Aid</span>
+        </ListItem>
       </List>
       <br></br>
       <Heading as="h4" variant="section-title" fontSize={16} my={-1}>

@@ -15,65 +15,29 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="3d">
+  <Layout title="3D">
     <Container>
       <Title>
         3D <Badge>2022</Badge>
       </Title>
       <P>
+        Inspired by the magic of cinema, the worlds inside 3D games, and
+        curiousity for how things work, I started learning how to model and
+        animate in 3D.
+      </P>
 
-      </P>
-      <br></br>
-      <P>
-       
-      </P>
       <List ml={4} my={4}>
-      <ListItem>
-          <Meta>Roles</Meta>
-          <span>PA, Assistant DP, Editor, Lighting</span>
-        </ListItem>
         <ListItem>
           <Meta>Technical</Meta>
-          <span>Premiere Pro, After Effects, Audition, Davinci Resolve</span>
+          <span>Blender, Houdini, Unreal Engine, Three.js, AutoCAD</span>
         </ListItem>
         <ListItem>
-          <Meta>Skills</Meta>
-          <span>Writing, Editing, Colour Grading, Cinematography, Audio</span>
+          <Meta>Learning</Meta>
+          <span>Modeling, Animation, Scripting, Texture Painting</span>
         </ListItem>
       </List>
-      <br></br>
-      <Heading as="h4" variant="section-title" fontSize={16} my={-1}>
-        <Center>Resume</Center>
-      </Heading>
 
-      <UnorderedList my={4}>
-        <ListItem>
-            <Badge mr={2}>short films</Badge>
-           
-        </ListItem>
-
-        <ListItem>
-          <Link href="http://www.intersectionsmedia.com/">
-            <Badge mr={2}>internship</Badge>
-            Intersections Digital Media Program
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-
-        <ListItem>
-            <Badge mr={2}>classes</Badge>
-            Writing for the Screen, Feature Film Writing, Screenplay Workshop, Motion Picture Directing
-        </ListItem>
-
-      </UnorderedList>
-
-
-      <WorkImage src="/images/works/risaflower_1c.png" alt="risa's flower" />  
-      <WorkImage src="/images/works/risaflower_3.png" alt="risa's flower" /> 
-      <WorkImage src="/images/works/risaflower_4.png" alt="risa's flower" />
-      <WorkImage src="/images/works/risaflower_5.png" alt="risa's flower" /> 
-      <WorkImage src="/images/works/noticeme_1.png" alt="notice me" />   
-      <WorkImage src="/images/works/noticeme_2.png" alt="notice me" />           
+      <WorkImage src="/images/works/donut.gif" alt="donut" />           
       <SimpleGrid columns={2} gap={2}>
       </SimpleGrid>
     </Container>

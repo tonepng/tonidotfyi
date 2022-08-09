@@ -21,14 +21,9 @@ const Work = () => (
         PHOTOGRAPHY <Badge>2014-2022</Badge>
       </Title>
       <P>
-        I wrote my first 90 page script sitting in on a university class in high school.
-        I haven&apos;t stopped writing and making movies since. 
-      </P>
-      <br></br>
-      <P>
-        I enjoy every part of the filmmaking proccess; from writing and storyboarding, to
-        shooting and editing, I can&apos;t help but try and get involved every step of 
-        the way.
+        At my first ever job, I saved up all summer to buy a DSLR camera. 
+        Whenever I&apos;m out taking photos, I find myself hunched over,
+        zoomed all the way in, and focused on some tiny world hidden in the grass.
       </P>
       <List ml={4} my={4}>
         <ListItem>

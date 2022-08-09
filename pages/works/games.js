@@ -19,7 +19,7 @@ const Games = () => (
       </Title>
       <P>
         Since the pandemic, I&apos;ve spent a lot of time creating little games with my friends.
-        Together, we participated in a few gamejams where we finished a game in under 48 hours.
+        Together, we participated in a handful of gamejams where we finished a game in under 48 hours.
       </P>
       <br></br>
       <P>
@@ -42,10 +42,9 @@ const Games = () => (
           <span>Pixel Art, Animation, GameDev, Narrative Design</span>
         </ListItem>
       </List>
-
-      <WorkImage src="/images/works/mogu.gif" alt="mogu game" />
-      <WorkImage src="/images/works/jamantha.jpg" alt="jamantha's last stand" />
-      <WorkImage src="/images/works/dissident.jpg" alt="dissident" />
+        <WorkImage src="/images/works/mogu.gif" alt="mogu game" />
+        <WorkImage src="/images/works/jamantha.jpg" alt="jamantha's last stand" />
+        <WorkImage src="/images/works/dissident.jpg" alt="dissident" />
     </Container>
   </Layout>
 )

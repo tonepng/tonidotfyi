@@ -91,26 +91,29 @@ const Home = () => (
           <NextLink href="/projects" passHref scroll={false}>
             <Link>projects</Link>
           </NextLink>
-            &nbsp;I&apos;m working on. 
+          &nbsp;I&apos;m working on. 
         </Paragraph>
         <br></br>
         <Paragraph>
-          I&apos;m going to talk about myself more here. Sell myself.
-          Become another cog in the machine. Please, buy my labour.
-          I care about the environment.
+          I&apos;m currently looking for work! Please
+          {' '}
+          <NextLink href="/contact" passHref scroll={false}>
+            <Link>contact</Link>
+          </NextLink>
+          &nbsp; me if you have any questions!
         </Paragraph>
-        <Box align="center" my={4}>
+        {/* <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               PROJECTS
             </Button>
           </NextLink>
-        </Box>
+        </Box> */}
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          timeline:  
+          education:  
         </Heading>
         <BioSection>
           <Badge>2017-2022</Badge>
@@ -124,10 +127,6 @@ const Home = () => (
           <Badge>2016</Badge>
             &nbsp;University of Michigan
         </BioSection>
-        <BioSection>
-          <Badge>2013-2017</Badge>
-            &nbsp;Community Highschool
-        </BioSection>
       </Section>
 
       <Section delay={0.3}>
@@ -135,11 +134,11 @@ const Home = () => (
           i love ♥
         </Heading>
         <Paragraph>
-          Art, Game Dev, 3D, Music, Drawing, Audio Production, Photography, Wildlife, Environmental Science
+          Art, Film, 3D, GameDev, Music, Drawing, Audio Production, Photography, Wildlife, Environmental Science
         </Paragraph>
       </Section>
 
-      <Section delay={0.3}>
+      {/* <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
@@ -214,7 +213,7 @@ const Home = () => (
             </Button>
           </NextLink>
         </Box>
-      </Section>
+      </Section> */}
     </Container>
   </Layout>
 )

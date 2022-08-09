@@ -1,78 +1,70 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  SimpleGrid,
+  UnorderedList,
+  Heading,
+  Center
+} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-
-import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
-import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
-import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
-import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
-import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg'
-import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
-import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
-import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Application, Title, WorkImage, Meta } from '../components/work'
+import P from '../components/paragraph'
 
 const ILM = () => (
-  <Layout title="ILM">
+  <Layout Title="ILM APPLICATION">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        ILM Application
-      </Heading>
-
-      <Section delay={0.1}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How to build a portfolio website"
-            thumbnail={thumbPortfolio}
-            href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
-          />
-          <GridItem
-            title="How to take notes in Markdown efficiently with Inkdrop"
-            thumbnail={thumbHowToUseInkdrop}
-            href="https://www.youtube.com/watch?v=-qBavwqc_mY"
-          />
-          <GridItem
-            title="My Fish workflow"
-            thumbnail={thumbFishWorkflow}
-            href="https://www.youtube.com/watch?v=KKxhf50FIPI"
-          />
-          <GridItem
-            title="My desk setup (Late 2020)"
-            thumbnail={thumbMyDeskSetup}
-            href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
-          />
-        </SimpleGrid>
-      </Section>
-
-      <Section delay={0.3}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo"
-            thumbnail={thumb500PaidUsers}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
-          />
-          <GridItem
-            title="I stopped setting a financial goal for my SaaS"
-            thumbnail={thumbFinancialGoal}
-            href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
-          />
-        </SimpleGrid>
-      </Section>
-
-      <Section delay={0.5}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How to Price Yourself as a Freelance Developer"
-            thumbnail={thumbHowToPriceYourself}
-            href="https://blog.inkdrop.app/how-to-price-yourself-as-a-freelance-developer-3453dfd59d91"
-          />
-          <GridItem
-            title="I made my React Native app 50x faster"
-            thumbnail={thumb50xFaster}
-            href="https://www.youtube.com/watch?v=vj723NlrIQc"
-          />
-        </SimpleGrid>
-      </Section>
+      <Application>
+        ILM APPLICATION <Badge>RE: Jedi Academy</Badge>
+      </Application>
+      <P>
+        This past spring, I completed an intensive 5 week training program at 
+        Intersections Media. Just a few weeks ago, our program was connected with 
+        ILM where I learned about the Jedi Academy.
+      </P>
+      <br></br>
+      <P>
+        Since then, I&apos;ve been obsessed. During the call, I wrote down the software 
+        used in-house, downloaded them to teach myself the basics, started an online course 
+        to better understand programming and scripting, and even created this very website 
+        and 3D model above to put together my portfolio.
+      </P>
+      <br></br>
+      <P>
+        I don&apos;t have a traditional background in 3D or VFX. A few weeks ago, I had no
+        background in making websites either. Through my multidisciplinary experience making 
+        games, shooting films, and taking photos while studying environmental science, I learned 
+        to leverage my strong work ethic, time management skills, and persistence to keep creating
+        new things. I am passionate about film and telling stories, and would bring my enthusiasm
+        and work ethic to ILM.
+      </P>
+      <br></br>
+      <P>
+        I am sharing my resume for review and would love the opportunity to share more details regarding 
+        my experience and training and how I could serve as a strong candidate for the Jedi Academy.
+      </P>
+      <br></br>
+      <P>
+        Many thanks for your consideration.
+      </P>
+      <List ml={4} my={4}>
+      <ListItem>
+          <Meta>Application</Meta>
+          <span>Jedi Academy, Layout, PA</span>
+        </ListItem>
+        <ListItem>
+          <Meta>Attributes</Meta>
+          <span>Curious, Detail Oriented, Quick Learner</span>
+        </ListItem>
+        <ListItem>
+          <Meta>Learning</Meta>
+          <span>As Much As Possible</span>
+        </ListItem>
+      </List>
+      <br></br>
     </Container>
   </Layout>
 )
