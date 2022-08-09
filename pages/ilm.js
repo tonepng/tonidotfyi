@@ -36,10 +36,10 @@ const ILM = () => (
       <P>
         I don&apos;t have a traditional background in 3D or VFX. A few weeks ago, I had no
         background in making websites either. Through my multidisciplinary experience making 
-        games, shooting films, and taking photos while studying environmental science, I learned 
-        to leverage my strong work ethic, time management skills, and persistence to keep creating
-        new things. I am passionate about film and telling stories, and would bring my enthusiasm
-        and work ethic to ILM.
+        games, shooting films, and taking photos while studying environmental science at school, 
+        I learned to leverage my strong work ethic, time management skills, and persistence to keep 
+        creating new things. I am passionate about film and telling stories, and would bring my 
+        enthusiasm and work ethic to ILM.
       </P>
       <br></br>
       <P>
@@ -52,7 +52,7 @@ const ILM = () => (
       </P>
       <List ml={4} my={4}>
       <ListItem>
-          <Meta>Application</Meta>
+          <Meta>Roles</Meta>
           <span>Jedi Academy, Layout, PA</span>
         </ListItem>
         <ListItem>

@@ -85,7 +85,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Hi! My name is Antoni. I&apos;m a recent grad living in Vancouver. 
-          Aspiring to work in film, and make cool art with other people. 
+          Aspiring to work in film, and make art with other people. 
           It would be cool if you checked out the
           {' '}
           <NextLink href="/projects" passHref scroll={false}>
@@ -100,7 +100,7 @@ const Home = () => (
           <NextLink href="/contact" passHref scroll={false}>
             <Link>contact</Link>
           </NextLink>
-          &nbsp; me if you have any questions!
+          &nbsp;me if you have any questions! add more here...
         </Paragraph>
         {/* <Box align="center" my={4}>
           <NextLink href="/projects" passHref scroll={false}>

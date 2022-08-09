@@ -18,11 +18,11 @@ const VoxelDog = () => {
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
-  const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
+  const [target] = useState(new THREE.Vector3(-0.5, 1.5, 0))
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
       10 * Math.sin(0.2 * Math.PI),
-      4,
+      40,
       10 * Math.cos(0.2 * Math.PI)
     )
   )
@@ -62,6 +62,7 @@ const VoxelDog = () => {
       // 8   -> 6
       const scale = 1;
       const camera = new THREE.OrthographicCamera(
+        //left / - 2, right / 2, 
         -scale,
         scale,
         scale,
