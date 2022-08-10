@@ -8,6 +8,7 @@ import { RenderPixelatedPass } from './pixel-pass'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
 import { OutlinePass } from 'three/examples/jsm/postprocessing/OutlinePass'
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
+import { MeshLambertMaterial } from 'three'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -74,15 +75,25 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
-      scene.add(ambientLight)
+      //const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+      //scene.add(ambientLight)
 
-      const directionalLight = new THREE.DirectionalLight(0xf8e4c4, 1)
+      // const hemiLight = new THREE.HemisphereLight(0xD7E5F0, 0xD7E5F0, 2)
+      // scene.add(hemiLight)
+
+      const directionalLight = new THREE.DirectionalLight(0xD7E5F0, .8)
       //100,100,100
-      directionalLight.position.set( 10, 10, 10 );
+      directionalLight.position.set( 5, 5, 5 );
 			directionalLight.castShadow = true;
 			directionalLight.shadow.mapSize.set( 2048, 2048 );
       scene.add(directionalLight)
+
+      const directionalLight2 = new THREE.DirectionalLight(0xF4E99B, .5)
+      //100,100,100
+      directionalLight.position.set( -5, -5, -5 );
+			directionalLight.castShadow = true;
+			directionalLight.shadow.mapSize.set( 2048, 2048 );
+      scene.add(directionalLight2)
 
       const spotLight = new THREE.SpotLight( 0xff8800, 1, 10, Math.PI / 16, .02, 2 );
 			spotLight.position.set( 2, 10, 0 );
@@ -98,7 +109,7 @@ const VoxelDog = () => {
       setControls(controls)
 
       loadGLTFModel(scene, '/dog.glb', {
-        receiveShadow: false,
+        receiveShadow: true,
         castShadow: true
       }).then(o => {
         outlinePass.selectedObjects = [];
@@ -124,7 +135,7 @@ const VoxelDog = () => {
       outlinePass.edgeThickness = 0.1;
       composer.addPass(outlinePass);
       //pixel size!
-      const renderPixelatedPass = new RenderPixelatedPass(screenResolution, 3, scene, camera);
+      const renderPixelatedPass = new RenderPixelatedPass(screenResolution, 4, scene, camera);
       composer.addPass(renderPixelatedPass);
 
       let req = null
