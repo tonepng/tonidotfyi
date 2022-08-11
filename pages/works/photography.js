@@ -38,13 +38,13 @@ const Work = () => (
 
 
 
-      <WorkImage src="/images/works/grass n bugs.png" alt="grass n bugs" /> 
-      <WorkImage src="/images/works/valentine.png" alt="valentine" /> 
-      <WorkImage src="/images/works/halloween.png" alt="halloween" />   
-      <WorkImage src="/images/works/purple flower.png" alt="purple flower" />  
-      <WorkImage src="/images/works/more bugs.png" alt="more bugs" />
-      <WorkImage src="/images/works/toni.png" alt="me" />    
-      <WorkImage src="/images/works/white flowers.png" alt="white flowers" />      
+      <WorkImage src="/images/works/photography/grass n bugs.jpg" alt="grass n bugs" /> 
+      <WorkImage src="/images/works/photography/valentine.jpg" alt="valentine" /> 
+      <WorkImage src="/images/works/photography/halloween.jpg" alt="halloween" />   
+      <WorkImage src="/images/works/photography/purple flower.jpg" alt="purple flower" />  
+      <WorkImage src="/images/works/photography/more bugs.jpg" alt="more bugs" />
+      <WorkImage src="/images/works/photography/toni.jpg" alt="me" />    
+      <WorkImage src="/images/works/photography/white flowers.jpg" alt="white flowers" />      
       <SimpleGrid columns={2} gap={2}>
       </SimpleGrid>
     </Container>

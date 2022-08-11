@@ -75,12 +75,12 @@ const Work = () => (
       </UnorderedList>
 
 
-      <WorkImage src="/images/works/risaflower_1c.png" alt="risa's flower" />  
-      <WorkImage src="/images/works/risaflower_3.png" alt="risa's flower" /> 
-      <WorkImage src="/images/works/risaflower_4.png" alt="risa's flower" />
-      <WorkImage src="/images/works/risaflower_5.png" alt="risa's flower" /> 
-      <WorkImage src="/images/works/noticeme_1.png" alt="notice me" />   
-      <WorkImage src="/images/works/noticeme_2.png" alt="notice me" />           
+      <WorkImage src="/images/works/film/filmrisaflower_1c.jpg" alt="risa's flower" />  
+      <WorkImage src="/images/works/film/risaflower_3.jpg" alt="risa's flower" /> 
+      <WorkImage src="/images/works/film/risaflower_4.jpg" alt="risa's flower" />
+      <WorkImage src="/images/works/film/risaflower_5.jpg" alt="risa's flower" /> 
+      <WorkImage src="/images/works/film/noticeme_1.jpg" alt="notice me" />   
+      <WorkImage src="/images/works/film/noticeme_2.jpg" alt="notice me" />           
       <SimpleGrid columns={2} gap={2}>
       </SimpleGrid>
     </Container>

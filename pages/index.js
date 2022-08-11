@@ -20,7 +20,6 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 //test
 import React, {useEffect} from 'react'
@@ -112,17 +111,17 @@ const Home = () => (
         <BioSection>
           <Badge fontFamily='IBM Plex Mono'>2017-2022</Badge>
             &nbsp;University of British Columbia
-             <p>&#8627;Natural Resource Conservation, Spanish, Film</p>
+             <p>&#8627;&nbsp;Natural Resource Conservation, Spanish, Film</p>
         </BioSection>
         <BioSection>
           <Badge fontFamily='IBM Plex Mono'>2022</Badge>
             &nbsp;Intersections Media Opportunities for Youth
-            <p>&#8627;Film Industry Training</p>
+            <p>&#8627;&nbsp;Film Industry Training</p>
         </BioSection>
         <BioSection>
           <Badge fontFamily='IBM Plex Mono'>2016</Badge>
             &nbsp;University of Michigan
-            <p>&#8627;Screen Arts and Cultures Program</p>
+            <p>&#8627;&nbsp;Screen Arts and Cultures Program</p>
         </BioSection>
       </Section>
 
