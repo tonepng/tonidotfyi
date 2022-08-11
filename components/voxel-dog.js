@@ -75,11 +75,11 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
       scene.add(ambientLight)
 
-      // const hemiLight = new THREE.HemisphereLight(0xD7E5F0, 0xD7E5F0, 2)
-      // scene.add(hemiLight)
+      const hemiLight = new THREE.HemisphereLight(0xD7E5F0, 0xD7E5F0, .2)
+      scene.add(hemiLight)
 
       const directionalLight = new THREE.DirectionalLight(0xD7E5F0, 1)
       //100,100,100
@@ -87,21 +87,6 @@ const VoxelDog = () => {
 			directionalLight.castShadow = true;
 			directionalLight.shadow.mapSize.set( 2048, 2048 );
       scene.add(directionalLight)
-
-      const directionalLight2 = new THREE.DirectionalLight(0xF4E99B, .5)
-      //100,100,100
-      directionalLight.position.set( -5, -5, -5 );
-			directionalLight.castShadow = true;
-			directionalLight.shadow.mapSize.set( 2048, 2048 );
-      scene.add(directionalLight2)
-
-      const spotLight = new THREE.SpotLight( 0xff8800, 1, 10, Math.PI / 16, .02, 2 );
-			spotLight.position.set( 2, 10, 0 );
-			//const target = spotLight.target;
-			//scene.add( target );
-			spotLight.lookAt( 0, 0, 0 );
-			spotLight.castShadow = true;
-			scene.add( spotLight );
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
