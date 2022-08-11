@@ -95,12 +95,12 @@ const Home = () => (
         <br></br>
         <Paragraph>
           I am currently looking for work! If you like what you see, or have
-          any questions, feel free to 
+          any questions, please 
           {' '}
           <NextLink href="/contact" passHref scroll={false}>
-            <Link>reach out</Link>
+            <Link>contact</Link>
           </NextLink>
-          &nbsp;and I will get back to you asap.
+          &nbsp;me and I will get back to you asap.
         </Paragraph>
       </Section>
 

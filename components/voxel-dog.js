@@ -78,7 +78,7 @@ const VoxelDog = () => {
       const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
       scene.add(ambientLight)
 
-      const hemiLight = new THREE.HemisphereLight(0xD7E5F0, 0xD7E5F0, .8)
+      const hemiLight = new THREE.HemisphereLight(0xD7E5F0, 0xD7E5F0, 1)
       scene.add(hemiLight)
 
       const directionalLight = new THREE.DirectionalLight(0xD7E5F0, 1)
