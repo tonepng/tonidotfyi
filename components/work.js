@@ -37,7 +37,7 @@ export const WorkImage = ({ src, alt }) => (
 )
 
 export const Meta = ({ children }) => (
-  <Badge colorScheme="green" mr={2}>
+  <Badge colorScheme="green" mr={2} fontFamily='IBM Plex Mono'>
     {children}
   </Badge>
 )

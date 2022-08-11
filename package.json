@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Antoni Alvarez & Takuya Matsuyama",
+  "author": "Antoni Alvarez",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",

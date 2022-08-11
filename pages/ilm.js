@@ -23,7 +23,7 @@ const ILM = () => (
       <P>
         This past spring, I completed an intensive 5 week training program at 
         Intersections Media. Just a few weeks ago, our program was connected with 
-        ILM where I learned about the Jedi Academy.
+        ILM on a recruitment call where I learned about the Jedi Academy.
       </P>
       <br></br>
       <P>

@@ -84,31 +84,25 @@ const Home = () => (
           about me:
         </Heading>
         <Paragraph>
-          Hi! My name is Antoni. I&apos;m a recent grad living in Vancouver. 
-          Aspiring to work in film, and make art with other people. 
-          It would be cool if you checked out the
+          Hi, my name is Antoni! I&apos;m a recent grad living in Vancouver, 
+          passionate about making things, storytelling, and wildlife. 
+          Check out some of the
           {' '}
           <NextLink href="/projects" passHref scroll={false}>
             <Link>projects</Link>
           </NextLink>
-          &nbsp;I&apos;m working on. 
+          &nbsp;I&apos;ve been working on. 
         </Paragraph>
         <br></br>
         <Paragraph>
-          I&apos;m currently looking for work! Please
+          I am currently looking for work! If you like what you see, or have
+          any questions, feel free to 
           {' '}
           <NextLink href="/contact" passHref scroll={false}>
-            <Link>contact</Link>
+            <Link>reach out</Link>
           </NextLink>
-          &nbsp;me if you have any questions! add more here...
+          &nbsp;and I will get back to you asap.
         </Paragraph>
-        {/* <Box align="center" my={4}>
-          <NextLink href="/projects" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              PROJECTS
-            </Button>
-          </NextLink>
-        </Box> */}
       </Section>
 
       <Section delay={0.2}>
@@ -116,16 +110,19 @@ const Home = () => (
           education:  
         </Heading>
         <BioSection>
-          <Badge>2017-2022</Badge>
+          <Badge fontFamily='IBM Plex Mono'>2017-2022</Badge>
             &nbsp;University of British Columbia
+             <p>&#8627;Natural Resource Conservation, Spanish, Film</p>
         </BioSection>
         <BioSection>
-          <Badge>2022</Badge>
-            &nbsp;Intersections Media
+          <Badge fontFamily='IBM Plex Mono'>2022</Badge>
+            &nbsp;Intersections Media Opportunities for Youth
+            <p>&#8627;Film Industry Training</p>
         </BioSection>
         <BioSection>
-          <Badge>2016</Badge>
+          <Badge fontFamily='IBM Plex Mono'>2016</Badge>
             &nbsp;University of Michigan
+            <p>&#8627;Screen Arts and Cultures Program</p>
         </BioSection>
       </Section>
 
@@ -137,83 +134,6 @@ const Home = () => (
           Art, Film, 3D, GameDev, Music, Drawing, Audio Production, Photography, Wildlife, Environmental Science
         </Paragraph>
       </Section>
-
-      {/* <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
-        </Heading>
-        <List>
-          <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoGithub />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
-      </Section> */}
     </Container>
   </Layout>
 )

@@ -75,15 +75,15 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      //const ambientLight = new THREE.AmbientLight(0xffffff, 1)
-      //scene.add(ambientLight)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+      scene.add(ambientLight)
 
       // const hemiLight = new THREE.HemisphereLight(0xD7E5F0, 0xD7E5F0, 2)
       // scene.add(hemiLight)
 
-      const directionalLight = new THREE.DirectionalLight(0xD7E5F0, .8)
+      const directionalLight = new THREE.DirectionalLight(0xD7E5F0, 1)
       //100,100,100
-      directionalLight.position.set( 5, 5, 5 );
+      directionalLight.position.set( 10, 10, 10 );
 			directionalLight.castShadow = true;
 			directionalLight.shadow.mapSize.set( 2048, 2048 );
       scene.add(directionalLight)

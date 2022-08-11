@@ -18,7 +18,7 @@ import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoMailSharp, IoLogoLinked
 
 
 const Posts = () => (
-  <Layout title="ILM">
+  <Layout title="Contact">
     <Container>
       <Heading as="h3" variant="section-title" fontSize={20} mb={7}>
         contact me!
